@@ -6,16 +6,19 @@
   "dependencies": {
     "express": "^4.17.1",
     "init": "^0.1.2",
+    "knex": "^0.21.2",
     "nodemon": "^2.0.4",
     "ts-node": "^8.10.2",
+    "ts-node-dev": "^1.0.0-pre.56",
     "typescript": "^3.9.7"
   },
   "devDependencies": {
     "@types/express": "^4.17.7"
   },
   "scripts": {
-    "start": "npx ts-node src/server.ts",
-    "knext:migrate":"npx knex migrate:latest --knexfile knexfile.ts migrate:latest",
+    "start": "ts-node-dev  --transpile-only --ignore-watch node_modules src/server.ts",
+    "knext:seed": "knex --knexfile knexfile.ts seed:run",
+    "knext:migrate": "knex --knexfile knexfile.ts migrate:latest",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],

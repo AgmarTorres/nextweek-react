@@ -58,3 +58,7 @@ module.exports = {
 npx knex migrate:latest --knexfile knexfile.ts migrate:latest
 
 useNullAsDefault: true
+
+//Arquivos
+
+app.use('/uploads', express.static(path.resolve(__dirname,'..','uploads')))
