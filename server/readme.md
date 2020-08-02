@@ -62,3 +62,11 @@ useNullAsDefault: true
 //Arquivos
 
 app.use('/uploads', express.static(path.resolve(__dirname,'..','uploads')))
+
+
+Controller
+    index, show(lista apenas 1), create ,update, delete
+
+
+npm install cors
+npm install @types/cors
