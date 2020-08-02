@@ -38,7 +38,7 @@ class PointsController{
 
         const trx = await knex.transaction()
         const point = {
-            image: 'image-fake',
+            image: 'https://http2.mlstatic.com/notebook-dell-g3-3590-i7-9750h-26ghz8gb512ssdgtx1660ti-D_NQ_NP_921072-MLB42260140296_062020-F.webp',
             name,
             email,
             whatsapp,
